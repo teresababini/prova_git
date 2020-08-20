@@ -1,0 +1,156 @@
+%dopo tentavio merge chiedeva di scrivere un messaggio di commit bah allora ho fatto e questo è il risultato
+terri@philip ~ $ cd Documenti/UNIVERSITA/cose
+terri@philip cose $ ls
+READ.md  file1.txt  file2.txt
+terri@philip cose $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	new file:   file2.txt
+
+terri@philip cose $ git branch
+  branch1
+* master
+terri@philip cose $ bit merge branch1
+
+Command 'bit' not found, did you mean:
+
+  command 'wit' from deb wit (3.01a-2)
+  command 'btt' from deb blktrace (1.2.0-5)
+  command 'git' from deb git (1:2.25.1-1ubuntu3)
+  command 'bst' from deb buildstream (1.4.1-1)
+  command 'bip' from deb bip (0.9.0~rc3-1)
+  command 'bti' from deb bti (034-4build1)
+  command 'vit' from deb vit (2.0.0-1)
+  command 'bat' from deb bacula-console-qt (9.4.2-2ubuntu5)
+
+Try: sudo apt install <deb name>
+
+terri@philip cose $ git merge branch1
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+terri@philip cose $ git log
+commit 8c58460645ab9602de85c759a076afdc288d8982 (HEAD -> master, origin/master)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:37:13 2020 +0000
+
+    add file1
+
+commit e547dd2346d6a27c0afac50e744faec58ca9b7b3
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 09:59:44 2020 +0000
+
+    prova identica a lui
+terri@philip cose $ git commit -m "tentativo merge file2, chiede cmmit?"
+[master f22a928] tentativo merge file2, chiede cmmit?
+terri@philip cose $ git lgo
+git: 'lgo' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+terri@philip cose $ git log
+commit f22a9286cfe2fa13f2191539026cc4f301330b8e (HEAD -> master)
+commit f22a9286cfe2fa13f2191539026cc4f301330b8e (HEAD -> master)
+Merge: 8c58460 4dcf046
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 13:11:04 2020 +0000
+
+    tentativo merge file2, chiede cmmit?
+
+commit 4dcf04646916c46f3b19123422b6b7ebe6b05b27 (branch1)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:44:02 2020 +0000
+
+    add file2
+
+commit 8c58460645ab9602de85c759a076afdc288d8982 (origin/master)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:37:13 2020 +0000
+
+    add file1
+
+commit e547dd2346d6a27c0afac50e744faec58ca9b7b3
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 09:59:44 2020 +0000
+
+    prova identica a lui
+...skipping...
+commit f22a9286cfe2fa13f2191539026cc4f301330b8e (HEAD -> master)
+Merge: 8c58460 4dcf046
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 13:11:04 2020 +0000
+
+    tentativo merge file2, chiede cmmit?
+
+commit 4dcf04646916c46f3b19123422b6b7ebe6b05b27 (branch1)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:44:02 2020 +0000
+
+    add file2
+
+commit 8c58460645ab9602de85c759a076afdc288d8982 (origin/master)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:37:13 2020 +0000
+
+    add file1
+
+commit e547dd2346d6a27c0afac50e744faec58ca9b7b3
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 09:59:44 2020 +0000
+
+...skipping...
+commit f22a9286cfe2fa13f2191539026cc4f301330b8e (HEAD -> master)
+Merge: 8c58460 4dcf046
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 13:11:04 2020 +0000
+
+    tentativo merge file2, chiede cmmit?
+
+commit 4dcf04646916c46f3b19123422b6b7ebe6b05b27 (branch1)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:44:02 2020 +0000
+
+    add file2
+
+commit 8c58460645ab9602de85c759a076afdc288d8982 (origin/master)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:37:13 2020 +0000
+
+    add file1
+
+commit e547dd2346d6a27c0afac50e744faec58ca9b7b3
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 09:59:44 2020 +0000
+
+    prova identica a lui
+...skipping...
+Merge: 8c58460 4dcf046
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 13:11:04 2020 +0000
+
+    tentativo merge file2, chiede cmmit?
+
+commit 4dcf04646916c46f3b19123422b6b7ebe6b05b27 (branch1)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:44:02 2020 +0000
+
+    add file2
+
+commit 8c58460645ab9602de85c759a076afdc288d8982 (origin/master)
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 12:37:13 2020 +0000
+
+    add file1
+
+commit e547dd2346d6a27c0afac50e744faec58ca9b7b3
+Author: Teresa Babini <teresa.babini@mail.polimi.it>
+Date:   Thu Aug 20 09:59:44 2020 +0000
+
+    prova identica a lui
+(END)
+
+
